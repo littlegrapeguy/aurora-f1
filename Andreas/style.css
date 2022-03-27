@@ -1,0 +1,188 @@
+:root {
+  --block-background-color: red;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.3;
+  font-size: 100%;
+  height: 100%;
+  overflow: none;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.aurora {
+  background-color: #46bb90;
+  background-image: linear-gradient(315deg, #56b946 0%, #416db5 74%, #694099 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  color: #46bb90;
+  background-color: #000000;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20rem 0;
+}
+
+header .aurora {
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+header .links a,
+header .links a:visited,
+header .links a:active {
+  margin: 0 0.625rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.623);
+  font-weight: 100;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+header .links a:hover {
+  font-weight: 800;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 480px) {
+  header .hero-punch {
+    font-size: 3rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+}
+
+.hero-punch {
+  font-size: 4rem;
+  padding-bottom: 0.625rem;
+}
+
+.first-section {
+  padding: 3rem 1.2rem;
+  word-wrap: break-word;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  color: white;
+}
+
+.first-section .subheading {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.first-section p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+}
+
+.first-section h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+
+.first-section .glass {
+  color: white;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  max-width: 800px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0.625rem;
+}
+
+.first-section .aurora {
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  padding: 6px 12px !important;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
+@media (min-width: 700px) {
+  .card {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card {
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
