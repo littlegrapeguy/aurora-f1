@@ -1,0 +1,48 @@
+:root {
+    --block-background-color: red;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 100%;
+    height: 100%;
+    overflow: none;
+    font-family: 'Inter', sans-serif;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.aurora {
+    background-color: $teal;
+    background-image: linear-gradient(315deg, $green 0%, $blue 74%, $purple 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

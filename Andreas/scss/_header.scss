@@ -1,0 +1,58 @@
+header {
+    color: $teal;
+    background-color: #000000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10rem 0;
+    .aurora {
+        background-color: #abe9cd;
+        background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Inter', sans-serif;
+    }
+    .links {
+        a,
+        a:visited,
+        a:active {
+            margin: 0 0.625rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.623);
+            font-weight: 100;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        a:hover {
+            font-weight: 800;
+            color: rgb(255, 255, 255);
+            border-bottom: 3px solid white
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        .hero-punch {
+            font-size: 3rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}
+
+.hero-punch {
+    font-size: 4rem;
+    padding-bottom: 0.625rem;
+}
