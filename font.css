@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Replica";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/GreycliffCF-Bold.otf?v=1648768714551")
+    format("woff");
+}
+@font-face {
+  font-family: "Fat";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/SharpGroteskBold25.woff2?v=1648768714769")
+    format("woff");
+}
