@@ -1,3 +1,5 @@
+/* Main stuff */
+
 margin: 0 92*,
 *::after,
 *::before {
@@ -5,22 +7,12 @@ margin: 0 92*,
   box-sizing: border-box;
 }
 
-::-moz-selection {
-  color: white;
-  background: #4b4fea;
-}
-
-::selection {
-  color: white;
-  background: #4b4fea;
-}
-
 * {
   font-family: "Inter", sans-serif;
 }
 
 html {
-  background-color: black;
+  background-color: #ffc3de;
 }
 
 body {
@@ -31,21 +23,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-body,
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+/* Header */
 
 header {
   color: black;
@@ -81,7 +59,6 @@ header .links a:visited,
 header .links a:active {
   margin: 0 0.625rem;
   font-size: 1.25rem;
-  text-decoration: none;
   color: #3458eb;
   font-weight: 200;
   -webkit-transition: 300ms;
@@ -114,12 +91,6 @@ header .links a:hover {
   }
 }
 
-@media screen and (max-width: 630px) {
-  footer {
-    padding: 5rem 3rem !important;
-  }
-}
-
 .hero-punch {
   font-size: 6rem;
   font-family: "Fat", sans-serif !important;
@@ -127,12 +98,137 @@ header .links a:hover {
   text-transform: uppercase;
 }
 
+/* Text classes */
+
 .sub {
   font-family: "Replica", sans-serif !important;
 }
 
 .fat {
   font-family: "Fat", sans-serif !important;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Stop image select */
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* About us section */
+
+.orange-section {
+  background-color: #ffe6c4;
+  color: #ff6726 !important;
+  padding: 3rem 0.625rem;
+}
+
+/* Sponsors section */
+
+.blue-section {
+  background-color: #e6f8ff;
+  color: #475aff !important;
+  padding: 3rem 0.625rem;
+}
+
+/* F1 in schools section */
+
+.purple-section {
+  background-color: #8578ff;
+  color: white !important;
+  padding: 0;
+}
+
+/* Meet our team section */
+
+.minty-section {
+  background-color: #f1ffeb;
+  color: #40cd81 !important;
+  padding: 3rem 0.625rem;
+}
+
+.para {
+  font-size: 1.5rem;
+  font-family: "Replica", sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 1.25rem;
+}
+
+.para a {
+  font-size: 1.5rem;
+  font-family: "Replica", sans-serif;
+  color: #3843a6;
+  position: relative;
+}
+
+.para a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #3843a6;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.para a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.pfp-name {
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 16px 8px;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: 300ms;
+}
+
+.a {
+  font-size: 22px;
+}
+
+button:hover {
+  color: black;
+  background-color: #f1ffeb;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .cards {
@@ -172,137 +268,23 @@ header .links a:hover {
   border-radius: 15px;
 }
 
-/*.css-selector {
-    background: linear-gradient(338deg, #924be4, #7092d7);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 27s ease infinite;
-    -moz-animation: AnimationName 27s ease infinite;
-    -o-animation: AnimationName 27s ease infinite;
-    animation: AnimationName 27s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}*/
-
-.green-section {
-  background-color: #ffe6c4;
-  color: #ff6726 !important;
-  padding: 3rem 0.625rem;
-}
-
-.grey-section {
-  background-color: #e6fcff;
-  color: #475aff !important;
-  padding: 3rem 0.625rem;
-}
-
-.white-section {
-  background-color: #8578ff;
-  color: #ffffff !important;
-  padding: 0;
-}
-
-.inner-pads {
-    padding: 3rem 0.625rem 0 0.625rem;
-}
-
-.minty-section {
-  background-color: #f1ffeb;
-  color: #40cd81 !important;
-  padding: 3rem 0.625rem;
-}
-
-.title {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.para {
-  font-size: 1.5rem;
-  font-family: "Replica", sans-serif;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 1.25rem;
-}
-
-.para a {
-  font-size: 1.5rem;
-  font-family: "Replica", sans-serif;
-  color: #3843a6;
-  text-decoration: none;
-  position: relative;
-}
-
-.para a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
+/* Background behind popup*/
+#background {
+  background-color: white;
+  position: fixed;
   left: 0;
   right: 0;
-  height: 3px;
-  background-color: #3843a6;
-  transform-origin: bottom right;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
-}
-
-.para a:hover::before {
-  transform-origin: bottom left;
-  transform: scaleX(1);
-}
-
-.pfp-name {
-  color: grey;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 16px 8px;
-  border-radius: 15px;
-  color: white;
-  background-color: #000000;
-  text-align: center;
-  cursor: pointer;
+  top: 0;
+  bottom: 0;
   width: 100%;
-  font-size: 18px;
-  transition: 300ms;
+  height: 100%;
+  opacity: .7;
 }
 
-.a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover,
-.a:hover {
-  opacity: 0.8;
-}
+/* Popup */
 
 #popup {
+  z-index: 100;
   color: black;
   border-radius: 20px;
   background-color: white;
@@ -339,7 +321,6 @@ button:hover,
 
 #close {
   text-align: center;
-  text-decoration: none;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -355,15 +336,10 @@ button:hover,
   margin: 10px 0;
 }
 
-footer {
-  padding: 10rem 10rem;
-  background-color: white;
-  transition: 100ms;
-}
+/* Stats section */
 
-footer li {
-  list-style-type: none;
-  margin-bottom: 10px;
+.inner-pads {
+  padding: 3rem 0.625rem 0 0.625rem;
 }
 
 .stats {
@@ -371,6 +347,7 @@ footer li {
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
 .statcard {
   padding: 45px 40px !important;
   flex: 100%;
@@ -392,8 +369,23 @@ footer li {
   }
 }
 
+/* Class to prevent scrolling */
+
 .noscroll {
   overflow-y: hidden;
+}
+
+/* Footer */
+
+footer {
+  padding: 10rem 10rem;
+  background-color: white;
+  transition: 100ms;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
 footer a {
@@ -420,15 +412,38 @@ footer a:hover::before {
   transform: scaleX(1);
 }
 
+@media screen and (max-width: 630px) {
+  footer {
+    padding: 5rem 3rem !important;
+  }
+}
+
+/* Selection color */
+
+::-moz-selection {
+  color: white;
+  background: #4b4fea;
+}
+
+::selection {
+  color: white;
+  background: #4b4fea;
+}
+
+/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #d6d7ff;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #4b4fea;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #464acf;
 }
