@@ -2,9 +2,26 @@
   font-family: "Replica";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/GreycliffCF-Bold.otf?v=1648768714551")
+  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/GreycliffCF-Bold.otf?v=1649231222072")
     format("woff");
 }
+
+@font-face {
+  font-family: "FB";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/AGENCYB.woff?v=1649141775964")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/futura.ttf?v=1648624771615")
+    format("woff");
+}
+
 @font-face {
   font-family: "Fat";
   font-style: normal;

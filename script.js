@@ -58,7 +58,7 @@ function popup(name) {
           alt="${human.name}"
           draggable="false"
         />
-        <h1 class="fat title">${human.name}</h1>
+        <h1 class="sub title">${human.name}</h1>
         <p class="pfp-name">${human.position}</p>
         <p class="pfp-bio">
           ${human.description}
@@ -88,3 +88,23 @@ document.onkeydown = function (evt) {
     closePopup();
   }
 };
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
