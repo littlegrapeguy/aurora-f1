@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Next Stop: Innovation | Aurora F1</title>
-    <meta name="theme-color" content="#ffc3de">
+    <meta name="theme-color" content="#ffc3de" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,189 +16,224 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="/script.js"></script>
     <script src="/scroll.js"></script>
+    <link
+      href="https://allfont.net/allfont.css?fonts=agency-fb"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
-    <header class="css-selector">
-      <h1 class="hero-punch aurora">Aurora</h1>
-      <h1 class="aurora sub">
-        <span class="sub">NEXT </span><span class="sub">STOP.</span>
-        <span class="sub">INNOVATION.</span>
-      </h1>
-      <br />
+    <nav>
       <h2 class="links">
         <a
           href="javascript:document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start' })"
           >ABOUT</a
         ><a
           href="javascript:document.getElementById('sponsor').scrollIntoView({ behavior: 'smooth', block: 'start' })"
-          >SPONSOR</a
+          >SPONSORS</a
         >
         <a
           href="javascript:document.querySelector('footer').scrollIntoView({ behavior: 'smooth', block: 'start' })"
           >CONTACT</a
         >
       </h2>
+    </nav>
+    <header id="top" class="css-selector">
+      <h1 class="hero-punch">Next Stop.</h1>
+      <h1 class="hero-punch italic aurora">Innovation</h1>
+      <br />
+      <p class="para">
+        Aurora is a
+        <a href="https://www.f1inschools.com" target="_blank">F1 in Schools</a>
+        team based in Kew, Victoria, and competed in the 2021 Victorian State
+        Finals. This year, we also aim to compete in the 2022 Victorian State
+        Finals, and move onto the National competition.
+      </p>
     </header>
-    <div class="orange-section" id="about">
+    <main>
+      <!--<div class="about-section" id="about">
       <center>
-        <h1 class="fat title">ABOUT US</h1>
-        <p class="para">
-          Aurora is a F1 in schools team based in Kew, Victoria, and competed in
-          the 2021 Victorian state finals. This year, we also aim to compete in
-          the 2022 Victorian State Finals, and move onto the National
-          competition.
-        </p>
+        <h1 class="sub title">About Us</h1>
+        
       </center>
-    </div>
-    <div class="purple-section">
+    </div>-->
       <center>
-        <div class="inner-pads">
-          <h1 class="fat title">F1 IN SCHOOLS</h1>
-          <p class="para">
-            Formula 1 in Schools is the largest STEM (Science, Technology,
-            Engineering and Math) program and competition in the world, with
-            over 17,000 schools across 51 nations competing having around 22,000
-            students competing in Australia alone. The aim of the program is to
-            develop the skills of up-and-coming engineers, as well as project
-            managers, through practical application and the importance of
-            fostering business management skills, and put those skills to the
-            final test as they race their products against other competitors
-            across the world.
-          </p>
-          <!--<h1 class="fat title">STATS</h1>-->
-        </div>
-        <div class="stats">
-          <div
-            style="background-color: #93eb98; color: #F3FFF4"
-            class="statcard"
-          >
-            <h1 class="fat shadow">50+ Countries</h1>
-          </div>
-          <div
-            style="background-color: #92DCE5; color: #2E7EB3;"
-            class="statcard"
-          >
-            <h1 class="fat shadow">17k Schools</h1>
-          </div>
-          <div
-            style="background-color: #ff6961; color: #FFE0DE;"
-            class="statcard"
-          >
-            <h1 class="fat shadow">22k Students</h1>
+        <div class="card-outer" id="about">
+          <div class="card-inner">
+            <div class="inner-pads">
+              <h1 class="sub title">F1 In Schools</h1>
+              <p class="para">
+                F1 in Schools is an international STEM (science, technology,
+                engineering, mathematics) competition for school children (aged
+                11–19), in which groups of 3–6 students have to design and
+                manufacture a miniature car out of the official F1 Model Block
+                using CAD/CAM design tools.
+              </p>
+              <a href="https://www.f1inschools.com/" target="_blank" style="color: white; font-size: inherit;">Read more →</a>
+            </div>
+            <div class="stats">
+              <div
+                style="margin: 5px 5px;"
+                class="statcard"
+              >
+                <h1 class="fat shadow">50+ Countries</h1>
+              </div>
+              <div
+                style="margin: 5px 5px;"
+                class="statcard"
+              >
+                <h1 class="fat shadow">17k Schools</h1>
+              </div>
+              <div
+                style="margin: 5px 5px;"
+                class="statcard"
+              >
+                <h1 class="fat shadow">22k Students</h1>
+              </div>
+            </div>
           </div>
         </div>
       </center>
-    </div>
-    <div class="minty-section">
-      <center><h1 class="fat title">MEET OUR TEAM!</h1></center>
-      <div class="cards">
-        <div class="card">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Andreas.webp"
-            alt="Andreas"
-          />
-          <h1>Andreas Wiggett</h1>
-          <p class="pfp-name">Team Manager</p>
-          <button class="fat" onclick="popup('andreas')">ABOUT</button>
-        </div>
-        <div class="card">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Peter.webp"
-            alt="Peter"
-          />
-          <h1>Peter Cai</h1>
-          <p class="pfp-name">Digital Manager</p>
-          <button class="fat" onclick="popup('peter')">ABOUT</button>
-        </div>
-        <div class="card">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Jay.webp"
-            alt="Jay"
-          />
-          <h1>Jay Zhao</h1>
-          <p class="pfp-name">Engineering Manager</p>
-          <button class="fat" onclick="popup('jay')">ABOUT</button>
-        </div>
-        <div class="card">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Connor.webp"
-            alt="Connor"
-          />
-          <h1>Connor Strobl</h1>
-          <p class="pfp-name">Engineering Manager</p>
-          <button class="fat" onclick="popup('connor')">ABOUT</button>
-        </div>
-        <div class="card">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Jimmy.webp"
-            alt="James"
-          />
-          <h1>James Tsui</h1>
-          <p class="pfp-name">Digital Manager</p>
-          <button class="fat" onclick="popup('james')">ABOUT</button>
+      <div class="org-section">
+        <center></center>
+      </div>
+      <div class="team-section">
+        <center><h1 class="sub title">Meet our Team!</h1></center>
+        <div class="cards">
+          <div class="card">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Andreas.webp"
+              alt="Andreas"
+            />
+            <h1 class="sub">Andreas Wiggett</h1>
+            <p class="pfp-name">Team Manager</p>
+            <button class="fat button" onclick="popup('andreas')">ABOUT</button>
+          </div>
+          <div class="card">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Peter.webp"
+              alt="Peter"
+            />
+            <h1 class="sub">Peter Cai</h1>
+            <p class="pfp-name">Digital Manager</p>
+            <button class="fat button" onclick="popup('peter')">ABOUT</button>
+          </div>
+          <div class="card">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Jay.webp"
+              alt="Jay"
+            />
+            <h1 class="sub">Jay Zhao</h1>
+            <p class="pfp-name">Engineering Manager</p>
+            <button class="fat button" onclick="popup('jay')">ABOUT</button>
+          </div>
+          <div class="card">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Connor.webp"
+              alt="Connor"
+            />
+            <h1 class="sub">Connor Strobl</h1>
+            <p class="pfp-name">Engineering Manager</p>
+            <button class="fat button" onclick="popup('connor')">ABOUT</button>
+          </div>
+          <div class="card">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/Jimmy.webp"
+              alt="James"
+            />
+            <h1 class="sub">James Tsui</h1>
+            <p class="pfp-name">Digital Manager</p>
+            <button class="fat button" onclick="popup('james')">ABOUT</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="blue-section" id="sponsor">
-      <center>
-        <h1 class="fat title">SPONSORS</h1>
-        <p class="para">
-          Currently, our two sponsors are the Australian Government's Deparment
-          of Defence and Trinity Grammar School, Kew. We would like to expand on
-          our sponsors and give companies a chance to be a part of our journey.
-          If you would like to inquire any further, please email us at: <br /><a
-            href="mailto:contact@teamauroraaus.com"
-            >contact@teamauroraaus.com</a
-          >.
-        </p>
-        <a href="https://www.trinity.vic.edu.au" target="_blank">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/tgslogo.png?v=1648982137104"
-            width="300px"
-          />
-        </a>
-        <a href="https://www.defence.gov.au" target="_blank">
-          <img
-            draggable="false"
-            src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/deoifjw.webp?v=1648982312966"
-            width="300px"
-          />
-        </a>
-      </center>
-    </div>
-    <footer>
-      <ul>
-        <li><a href="mailto:contact@teamauroraaus.com">Email</a></li>
-        <li><a href="tel:0421-862-435">Phone</a></li>
-        <li>
-          <a href="https://instagram.com/teamauroraaus" target="_blank"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href="https://twitter.com/TeamAuroraAus" target="_blank"
-            >Twitter</a
-          >
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@teamauroraaus" target="_blank"
-            >TikTok</a
-          >
-        </li>
-        <br />
-        <li>Website designed by <a href="https://rmxgrp.dev" target="_blank">RmxGrp</a>.</li>
-      </ul>
-    </footer>
-    <div id="background" style="display: none;" onclick="closePopup()"></div>
-    <div id="popup" style="display: none;">
-      <a id="close" href="javascript:closePopup()">✖</a>
-      <div class="cont"></div>
-    </div>
+      <div class="sponsors-section" id="sponsor">
+        <center>
+          <h1 class="sub title">Sponsors</h1>
+          <p class="para">
+            Currently, our two sponsors are the Australian Government's
+            Deparment of Defence and Trinity Grammar School, Kew. We would like
+            to expand on our sponsors and give companies a chance to be a part
+            of our journey. If you would like to inquire any further, please
+            email us at: <br /><a href="mailto:contact@teamauroraaus.com"
+              >contact@teamauroraaus.com</a
+            >.
+          </p>
+          <a href="https://www.trinity.vic.edu.au" target="_blank">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/tgslogo.png?v=1648982137104"
+              width="300px"
+            />
+          </a>
+          <a href="https://www.defence.gov.au" target="_blank">
+            <img
+              draggable="false"
+              src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/deoifjw.webp?v=1648982312966"
+              width="300px"
+            />
+          </a>
+        </center>
+      </div>
+      </main>
+      <footer>
+        <ul>
+          <li>
+            ✉️
+            <a href="mailto:contact@teamauroraaus.com" class="link"
+              >contact@teamauroraaus.com</a
+            >
+          </li>
+          <li>📞 <a href="tel:0421-862-435" class="link">0421 862 435</a></li>
+          <br />
+          <li>
+            <a href="https://instagram.com/teamauroraaus" target="_blank">
+              <img
+                src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/instagram.webp"
+              />
+            </a>
+            <a href="https://twitter.com/TeamAuroraAus" target="_blank">
+              <img
+                src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/twitter.webp"
+              />
+            </a>
+            <a href="https://www.tiktok.com/@teamauroraaus" target="_blank">
+              <img
+                src="https://cdn.glitch.global/6ac2c59d-f706-4744-843e-8367390d9354/tiktok.webp"
+              />
+            </a>
+          </li>
+          <br />
+          <li>
+            Website designed by
+            <a href="https://rmxgrp.dev" target="_blank" class="link color"
+              >RmxGrp</a
+            >.
+          </li>
+          <br />
+          <br />
+          <br />
+          </ul>
+        <ul style="padding: 0px 10px;">
+          <li style="font-size: 0.7rem;opacity: 0.5;">The F1 IN SCHOOLS Logo, F1, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trademarks of Formula One Licensing BV, a Formula One group company. All rights reserved.</li>
+       <li style="font-size: 0.7rem;opacity: 0.5;">Trinity Grammar School (Aurora's home school) stands on the traditional lands of the Wurundjeri people of the Kulin Nations.  We pay our respects to their Elders past, present and emerging, and affirm our commitment to the work of reconciliation.</li>
+     
+        </ul>
+      </footer>
+      <a
+        href="javascript:document.getElementById('top').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+        ><button class="up">↑</button></a
+      >
+      <div id="background" style="display: none" onclick="closePopup()"></div>
+      <div id="popup" style="display: none">
+        <a id="close" href="javascript:closePopup()">✖</a>
+        <div class="cont"></div>
+      </div>
+    
   </body>
 </html>
